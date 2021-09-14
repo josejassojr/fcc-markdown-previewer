@@ -1,0 +1,145 @@
+html {
+  color: rgb(255, 244, 244);
+  background-color: #072436;
+}
+
+.header-container {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.headers {
+  height: 5vh;
+  font-size: 4vh;
+  font-family: "Press Start 2P", cursive;
+  background-color: #224870;
+  border-bottom: 5px solid black;
+  position: relative;
+}
+
+#clear-btn {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  background-color: #224870;
+  position: absolute;
+  right: 5vw;
+  font-size: 2.5vh;
+  border: none;
+  cursor: pointer;
+  top: 10px;
+}
+.expandBtn {
+  background-color: #224870;
+  position: absolute;
+  right: 1vw;
+  font-size: 3.25vh;
+  border: none;
+  cursor: pointer;
+  bottom: -5px;
+  border-bottom: 5px solid black;
+}
+
+#editor-container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 60vh;
+  width: 50vw;
+  position: relative;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+#editor {
+  font-size: 14px;
+  background-color: #72a2d5;
+  height: 89%;
+  width: 99%;
+  color: black;
+  resize: vertical;
+}
+
+#preview-container {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 70px;
+  border: 5px solid black;
+  width: 70vw;
+}
+
+#preview {
+  margin-top: -3vh;
+  height: 100%;
+  overflow-y: hidden;
+  min-height: 30vh;
+  color: black;
+  background-color: #72a2d5;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .headers {
+    height: 3vh;
+    font-size: 2vh;
+    width: 100%;
+  }
+
+  .expandBtn {
+    font-size: 2vh;
+    bottom: -5px;
+    border-bottom: 3px solid black;
+  }
+
+  #editor-container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 97%;
+    position: relative;
+    margin-top: 10px;
+    border: 3px solid black;
+  }
+
+  #editor {
+    font-size: 14px;
+    background-color: #72a2d5;
+    height: 93%;
+    width: 96%;
+    color: black;
+    resize: vertical;
+    border: none;
+    border-radius: 0%;
+  }
+
+  #preview-container {
+    margin-top: 50px;
+    width: 97%;
+  }
+
+  #preview {
+    margin-top: -3vh;
+    height: 100%;
+    min-height: 30vh;
+  }
+
+  #clear-btn {
+    font-size: 1.5vh;
+    border: none;
+    cursor: pointer;
+    top: 6px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 750px) {
+  .headers {
+    font-size: 18px;
+  }
+  #clear-btn {
+    font-size: 13px;
+      right: 7vw;
+
+  }
+}
